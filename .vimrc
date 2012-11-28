@@ -104,9 +104,7 @@ set noexpandtab
 " fileencodingsの設定ではencodingの値を一番最後に記述する
 set encoding=utf-8
 set termencoding=utf-8
-set fileencoding=utf-8
-set fileencodings=ucs-bom,euc-jp,cp932,iso-2022-jp
-set fileencodings+=,ucs-2le,ucs-2,utf-8
+set fileencodings=utf-8,ucs-bom,euc-jp,cp932,iso-2022-jp
 
 "----------------------------------------------------
 " オートコマンド
