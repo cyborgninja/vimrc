@@ -95,7 +95,19 @@ set softtabstop=2
 " インデントの各段階に使われる空白の数
 set shiftwidth=2
 " タブを挿入するとき、代わりに空白を使わない
-set noexpandtab
+set expandtab
+
+" indent-guides を有効にする
+autocmd VimEnter * :IndentGuidesEnable
+" 1インデント目からガイドする
+let g:indent_guides_start_level = 1
+" 自動カラーを無効にして手動で設定する
+let g:indent_guides_auto_colors = 0
+" ガイドの幅
+let g:indent_guides_guide_size = 1
+" インデントカラー
+autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  guibg=grey235  ctermbg=235
+autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=grey233  ctermbg=233
 
 "----------------------------------------------------
 " 国際化関係
@@ -160,7 +172,8 @@ NeoBundle 'VimClojure'
 NeoBundle 'Shougo/vimshell'
 NeoBundle 'Shougo/unite.vim'
 NeoBundle 'Shougo/neocomplcache'
-NeoBundle 'Shougo/neocomplcache-snippets-complete'
+NeoBundle 'Shougo/neocomplcache-rsense.vim'
+NeoBundle 'Shougo/neosnippet'
 NeoBundle 'jpalardy/vim-slime'
 NeoBundle 'scrooloose/syntastic'
 NeoBundle 'tpope/vim-endwise.git'
@@ -181,6 +194,8 @@ NeoBundle 'taichouchou2/vim-rails'
 NeoBundle 'romanvbabenko/rails.vim'
 NeoBundle 'ujihisa/unite-rake'
 NeoBundle 'basyura/unite-rails'
+NeoBundle 'scrooloose/syntastic'
+let g:syntastic_mode_map = { 'mode': 'passive', 'active_filetypes': ['ruby'] }
 
 " reference environment
 NeoBundle 'thinca/vim-ref'
@@ -197,6 +212,9 @@ NeoBundle 'hail2u/vim-css3-syntax'
 NeoBundle 'taichouchou2/html5.vim'
 NeoBundle 'taichouchou2/vim-javascript'
 NeoBundle 'kchmck/vim-coffee-script'
+
+" Swift
+NeoBundle 'toyamarinyon/vim-swift'
 
 filetype plugin on
 filetype indent on
@@ -291,3 +309,7 @@ function! SetUpRubySetting()
 endfunction
 autocmd FileType ruby,eruby,ruby.rspec call SetUpRubySetting()
 
+"------------------------------------
+"" scss.syntax
+"------------------------------------
+au BufRead,BufNewFile *.scss set filetype=scss
