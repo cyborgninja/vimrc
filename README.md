@@ -20,10 +20,19 @@ brew install vim
 vimのパッケージ管理ソフトdein。これをインストール。
 以前は、Neobundleで色々入れていたがShougoさん自身が暗黒の力を使ったほうがいいとのことで。
 
+```
+$ mkdir -p ~/.vim/dein/repos/github.com/Shougo/dein.vim
+$ git clone https://github.com/Shougo/dein.vim.git \
+    ~/.vim/dein/repos/github.com/Shougo/dein.vim
+```
+
+上記の２つのコマンドでdeinがインストールされます。
+
+参考
 * [dein.vimを使ってみる](http://qiita.com/yoza/items/2f8bd33a18225754f346)
 * [NeoBundle から dein.vim に乗り換えたら爆速だった話](http://qiita.com/yoza/items/2f8bd33a18225754f346)
 
 ## 3. このgithub上の.vimrcを設置
 
-好きなようにカスタマイズしてください
+コピペしてそのままでも、好きなようにカスタマイズしてでも。基本設置するだけ。
 
