@@ -1,4 +1,4 @@
-if &compatible
+if '&compatible'
   set nocompatible               " Be iMproved
 endif
 
@@ -27,6 +27,12 @@ call dein#add('szw/vim-tags')
 " You can specify revision/branch/tag.
 call dein#add('Shougo/vimshell', { 'rev': '3787e5' })
 
+" Code coloring
+call dein#add('tomasr/molokai')
+
+" neocompleteの設定
+" <TAB>: completion.
+inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
 
 " neocomplcacheの設定
 " Disable AutoComplPop.
@@ -90,6 +96,7 @@ set noincsearch
 "----------------------------------------------------
 " 背景色
 colorscheme darkblue
+
 " タイトルをウインドウ枠に表示する
 set title
 " 行番号を表示
@@ -171,3 +178,6 @@ match ZenkakuSpace /　/
 " 末尾の半角スペースを視覚化
 highlight WhiteSpaceEOL guibg=#FFFFFF
 2match WhiteSpaceEOL /\S\@<=\s\+$/
+
+" Deleteキーを操作できるように
+set backspace=indent,eol,start
