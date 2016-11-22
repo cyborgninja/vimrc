@@ -3,10 +3,10 @@ if '&compatible'
 endif
 
 " Required:
-set runtimepath+=/Users/cyborgninja/.vim/bundle/repos/github.com/Shougo/dein.vim
+set runtimepath+=~/.vim/bundle/repos/github.com/Shougo/dein.vim
 
 " Required:
-call dein#begin('/Users/cyborgninja/.vim/bundle')
+call dein#begin('~/.vim/bundle')
 
 " Let dein manage dein
 " Required:
