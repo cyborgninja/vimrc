@@ -23,6 +23,9 @@ call dein#add('itchyny/lightline.vim') " 情報を見やすく
 call dein#add('nathanaelkane/vim-indent-guides') " インデントを色分け
 call dein#add('tpope/vim-rails')
 call dein#add('szw/vim-tags')
+call dein#add('kchmck/vim-coffee-script')
+call dein#add('vitaly/vim-literate-coffeescript')
+call dein#add('mtscout6/vim-cjsx')
 
 " You can specify revision/branch/tag.
 call dein#add('Shougo/vimshell', { 'rev': '3787e5' })
