@@ -30,8 +30,8 @@ $ git clone https://github.com/Shougo/dein.vim.git \
 ※ sh コマンドで入れるパターンもある。=> 公式参照: [dein 公式](https://github.com/Shougo/dein.vim)
 
 参考
-* [dein.vimを使ってみる](http://qiita.com/yoza/items/2f8bd33a18225754f346)
-* [NeoBundle から dein.vim に乗り換えたら爆速だった話](http://qiita.com/yoza/items/2f8bd33a18225754f346)
+* [dein.vimを使ってみる](https://qiita.com/yoza/items/2f8bd33a18225754f346)
+* [NeoBundle から dein.vim に乗り換えたら爆速だった話](https://qiita.com/delphinus/items/00ff2c0ba972c6e41542)
 
 ## 3. このgithub上の.vimrcを設置
 
