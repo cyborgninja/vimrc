@@ -27,6 +27,7 @@ $ git clone https://github.com/Shougo/dein.vim.git \
 ```
 
 上記の２つのコマンドでdeinがインストールされます。
+※ sh コマンドで入れるパターンもある。=> 公式参照: [dein 公式](https://github.com/Shougo/dein.vim)
 
 参考
 * [dein.vimを使ってみる](http://qiita.com/yoza/items/2f8bd33a18225754f346)
@@ -35,4 +36,11 @@ $ git clone https://github.com/Shougo/dein.vim.git \
 ## 3. このgithub上の.vimrcを設置
 
 コピペしてそのままでも、好きなようにカスタマイズしてでも。基本設置するだけ。
+
+## 4.インストール
+コマンドラインから、vimと打って、vimを起動して、vim上内で以下のコマンドを実行
+
+```
+:call dein#install()
+```
 
