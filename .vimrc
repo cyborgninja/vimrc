@@ -26,6 +26,9 @@ call dein#add('szw/vim-tags')
 call dein#add('kchmck/vim-coffee-script')
 call dein#add('vitaly/vim-literate-coffeescript')
 call dein#add('mtscout6/vim-cjsx')
+call dein#add('tomlion/vim-solidity') "solidity
+call dein#add('pangloss/vim-javascript') "javascript
+call dein#add('mxw/vim-jsx') "react
 
 " You can specify revision/branch/tag.
 call dein#add('Shougo/vimshell', { 'rev': '3787e5' })
